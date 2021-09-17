@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let min = parseInt(window.prompt("Escribe los minutos:")); //560000
+        let daysTotal = Math.floor(min*(1/60)*(1/24)); //388
+        console.log(daysTotal);
+        let years = parseInt(daysTotal/356);
+        console.log(years);
+        let days = daysTotal-356;
+        console.log(days);
+
+        window.alert(`Los ${min} minutos son: ${years} años y ${days} días.`)
+    </script>
+</body>
+</html>

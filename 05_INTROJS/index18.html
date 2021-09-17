@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let time = parseInt(window.prompt("Introduce tiempo en segundos:")); //4000 1h6m40s
+        let horas = Math.floor(time/3600); //1
+        let minutos = Math.floor((time%3600)/60); //6
+        let segundos = Math.floor((time%3600) - (minutos*60)); //40
+        console.log(segundos);
+        window.alert(`${horas} horas, ${minutos} minutos y ${segundos} segundos`);
+    </script>
+</body>
+</html>
